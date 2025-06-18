@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Leo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(224, 224, 224);
+        }
+        h1 {
+            color: rgb(218, 5, 5);
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        
+        h3 {
+            color: black;
+            font-size: 40px;
+        }
+        .nomeVisitante{
+            color: rgb(61, 61, 61);
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        .botao {
+            height: 30px;
+            width: 200px;
+            background-color: darkred;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .botao:hover{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Bem vindo ao meu Site</h1>
+    <h3>Esse site é sobre futebol</h3>
+    <p>Bem vindo</p>
+    <p id="visitante" class="nomeVisitante">Aguardando...</p>
+
+    
+    <a href="https://ge.globo.com/futebol/times/sao-paulo/noticia/2024/01/30/dos-gols-ao-chute-na-bandeira-luciano-reencontra-corinthians-em-busca-de-fim-do-tabu-no-sao-paulo.ghtml"><img src="Luciano.webp" alt=""></a>
+    <br>
+    <a href="https://ge.globo.com/futebol/times/sao-paulo/noticia/2024/01/30/dos-gols-ao-chute-na-bandeira-luciano-reencontra-corinthians-em-busca-de-fim-do-tabu-no-sao-paulo.ghtml">Clique no link</a>
+    
+    <h3>Cadastro</h3>
+    <label>Nome</label>
+    <br>
+    <input type="text">
+    <br>
+    <label>Sobrenome</label>
+    <br>
+    <input type="text">
+    <br>
+    <br>
+    <button onclick="enviar()" class="botao">Enviar</button>
+
+    <script>
+        function enviar() {
+            alert("Cadastro feito com sucesso")
+        }
+        
+        var usuario = prompt("Digite seu nome")
+        
+        document.getElementById('visitante').innerHTML = usuario
+    </script>
+    </center>
+</body>
+</html>
